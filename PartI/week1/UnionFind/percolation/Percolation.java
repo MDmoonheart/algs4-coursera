@@ -90,8 +90,7 @@ public class Percolation {
     private void validate(int row, int col) {
         if ((row >= 0) && (row < this.n) && (col >= 0) && (col < this.n)) {
             return;
-        }
-        else throw new IllegalArgumentException("the arguments are outside of prescribed range");
+        } else throw new IllegalArgumentException("the arguments are outside of prescribed range");
     }
 
     // is the given row and column number inside prescribed range
@@ -142,8 +141,7 @@ public class Percolation {
         }
         if (per.percolates()) {
             System.out.println("The system is percolated");
-        }
-        else {
+        } else {
             System.out.println("The system is not percolated");
         }
 
